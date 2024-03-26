@@ -16,6 +16,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('test', function(){
-    return dd(DailyDataset::all()->sum('expense'));
-})->name('user');
